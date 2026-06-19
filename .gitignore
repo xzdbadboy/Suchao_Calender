@@ -29,10 +29,15 @@ credentials.json
 .auth
 .credentials
 
-# Obsidian本地配置（保留.obsidian但排除某些文件）
-.obsidian/workspace.json
-.obsidian/cache/
-.obsidian/sync.json
+# Claude Code本地配置
+.claude/
+
+# Obsidian库配置（完全排除）
+.obsidian/
+
+# 需求文档和开发指导（本地使用）
+需求文件.md
+CLAUDE.md
 
 # 日志文件
 *.log

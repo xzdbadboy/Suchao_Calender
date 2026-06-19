@@ -3,629 +3,639 @@ VERSION:2.0
 PRODID:-//Suchao Calendar//2026 Super League//zh-CN
 CALSCALE:GREGORIAN
 X-WR-CALNAME:2026苏超⚽🏆
+X-WR-TIMEZONE:Asia/Shanghai
 X-APPLE-CALENDAR-COLOR:#1E90FF
+BEGIN:VTIMEZONE
+TZID:Asia/Shanghai
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0800
+TZOFFSETTO:+0800
+TZNAME:CST
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 SUMMARY:苏超第1轮-常州队 3:0 南通队
-DTSTART:20260411T113500Z
-DTEND:20260411T133500Z
+DTSTART;TZID=Asia/Shanghai:20260411T193500
+DTEND;TZID=Asia/Shanghai:20260411T213500
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第1轮\n比分: 常州队 3:0 南通队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第1轮\n比分: 常州队 3:0 南通队\n时间: 北京时间 19:35\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第1轮-扬州队 0:1 苏州队
-DTSTART:20260411T113500Z
-DTEND:20260411T133500Z
+DTSTART;TZID=Asia/Shanghai:20260411T193500
+DTEND;TZID=Asia/Shanghai:20260411T213500
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第1轮\n比分: 扬州队 0:1 苏州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第1轮\n比分: 扬州队 0:1 苏州队\n时间: 北京时间 19:35\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第1轮-无锡队 3:1 镇江队
-DTSTART:20260411T113500Z
-DTEND:20260411T133500Z
+DTSTART;TZID=Asia/Shanghai:20260411T193500
+DTEND;TZID=Asia/Shanghai:20260411T213500
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第1轮\n比分: 无锡队 3:1 镇江队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第1轮\n比分: 无锡队 3:1 镇江队\n时间: 北京时间 19:35\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第1轮-连云港队 0:2 盐城队
-DTSTART:20260411T113500Z
-DTEND:20260411T133500Z
+DTSTART;TZID=Asia/Shanghai:20260411T193500
+DTEND;TZID=Asia/Shanghai:20260411T213500
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第1轮\n比分: 连云港队 0:2 盐城队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第1轮\n比分: 连云港队 0:2 盐城队\n时间: 北京时间 19:35\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第2轮-宿迁队 2:0 南京队
-DTSTART:20260418T114000Z
-DTEND:20260418T134000Z
+DTSTART;TZID=Asia/Shanghai:20260418T194000
+DTEND;TZID=Asia/Shanghai:20260418T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第2轮\n比分: 宿迁队 2:0 南京队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第2轮\n比分: 宿迁队 2:0 南京队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第2轮-淮安队 1:1 扬州队
-DTSTART:20260418T114000Z
-DTEND:20260418T134000Z
+DTSTART;TZID=Asia/Shanghai:20260418T194000
+DTEND;TZID=Asia/Shanghai:20260418T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第2轮\n比分: 淮安队 1:1 扬州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第2轮\n比分: 淮安队 1:1 扬州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第2轮-徐州队 3:0 泰州队
-DTSTART:20260418T114000Z
-DTEND:20260418T134000Z
+DTSTART;TZID=Asia/Shanghai:20260418T194000
+DTEND;TZID=Asia/Shanghai:20260418T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第2轮\n比分: 徐州队 3:0 泰州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第2轮\n比分: 徐州队 3:0 泰州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第3轮-连云港队 0:0 无锡队
-DTSTART:20260425T114000Z
-DTEND:20260425T134000Z
+DTSTART;TZID=Asia/Shanghai:20260425T194000
+DTEND;TZID=Asia/Shanghai:20260425T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第3轮\n比分: 连云港队 0:0 无锡队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第3轮\n比分: 连云港队 0:0 无锡队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第3轮-南通队 0:0 徐州队
-DTSTART:20260425T114000Z
-DTEND:20260425T134000Z
+DTSTART;TZID=Asia/Shanghai:20260425T194000
+DTEND;TZID=Asia/Shanghai:20260425T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第3轮\n比分: 南通队 0:0 徐州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第3轮\n比分: 南通队 0:0 徐州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第3轮-盐城队 1:0 宿迁队
-DTSTART:20260425T114000Z
-DTEND:20260425T134000Z
+DTSTART;TZID=Asia/Shanghai:20260425T194000
+DTEND;TZID=Asia/Shanghai:20260425T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第3轮\n比分: 盐城队 1:0 宿迁队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第3轮\n比分: 盐城队 1:0 宿迁队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第4轮-南京队 2:1 常州队
-DTSTART:20260502T114000Z
-DTEND:20260502T134000Z
+DTSTART;TZID=Asia/Shanghai:20260502T194000
+DTEND;TZID=Asia/Shanghai:20260502T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第4轮\n比分: 南京队 2:1 常州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第4轮\n比分: 南京队 2:1 常州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第4轮-泰州队 3:1 扬州队
-DTSTART:20260502T114000Z
-DTEND:20260502T134000Z
+DTSTART;TZID=Asia/Shanghai:20260502T194000
+DTEND;TZID=Asia/Shanghai:20260502T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第4轮\n比分: 泰州队 3:1 扬州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第4轮\n比分: 泰州队 3:1 扬州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第4轮-苏州队 0:1 淮安队
-DTSTART:20260502T114000Z
-DTEND:20260502T134000Z
+DTSTART;TZID=Asia/Shanghai:20260502T194000
+DTEND;TZID=Asia/Shanghai:20260502T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第4轮\n比分: 苏州队 0:1 淮安队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第4轮\n比分: 苏州队 0:1 淮安队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第4轮-镇江队 1:2 盐城队
-DTSTART:20260502T114000Z
-DTEND:20260502T134000Z
+DTSTART;TZID=Asia/Shanghai:20260502T194000
+DTEND;TZID=Asia/Shanghai:20260502T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第4轮\n比分: 镇江队 1:2 盐城队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第4轮\n比分: 镇江队 1:2 盐城队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第5轮-无锡队 3:1 泰州队
-DTSTART:20260509T114000Z
-DTEND:20260509T134000Z
+DTSTART;TZID=Asia/Shanghai:20260509T194000
+DTEND;TZID=Asia/Shanghai:20260509T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第5轮\n比分: 无锡队 3:1 泰州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第5轮\n比分: 无锡队 3:1 泰州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第5轮-南通队 0:0 南京队
-DTSTART:20260509T114000Z
-DTEND:20260509T134000Z
+DTSTART;TZID=Asia/Shanghai:20260509T194000
+DTEND;TZID=Asia/Shanghai:20260509T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第5轮\n比分: 南通队 0:0 南京队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第5轮\n比分: 南通队 0:0 南京队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第5轮-徐州队 1:2 宿迁队
-DTSTART:20260509T114000Z
-DTEND:20260509T134000Z
+DTSTART;TZID=Asia/Shanghai:20260509T194000
+DTEND;TZID=Asia/Shanghai:20260509T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第5轮\n比分: 徐州队 1:2 宿迁队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第5轮\n比分: 徐州队 1:2 宿迁队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第6轮-常州队 1:2 淮安队
-DTSTART:20260516T114000Z
-DTEND:20260516T134000Z
+DTSTART;TZID=Asia/Shanghai:20260516T194000
+DTEND;TZID=Asia/Shanghai:20260516T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第6轮\n比分: 常州队 1:2 淮安队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第6轮\n比分: 常州队 1:2 淮安队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第6轮-苏州队 2:2 连云港队
-DTSTART:20260516T114000Z
-DTEND:20260516T134000Z
+DTSTART;TZID=Asia/Shanghai:20260516T194000
+DTEND;TZID=Asia/Shanghai:20260516T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第6轮\n比分: 苏州队 2:2 连云港队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第6轮\n比分: 苏州队 2:2 连云港队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第6轮-扬州队 1:0 镇江队
-DTSTART:20260516T114000Z
-DTEND:20260516T134000Z
+DTSTART;TZID=Asia/Shanghai:20260516T194000
+DTEND;TZID=Asia/Shanghai:20260516T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第6轮\n比分: 扬州队 1:0 镇江队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第6轮\n比分: 扬州队 1:0 镇江队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第7轮-淮安队 0:1 盐城队
-DTSTART:20260523T114000Z
-DTEND:20260523T134000Z
+DTSTART;TZID=Asia/Shanghai:20260523T194000
+DTEND;TZID=Asia/Shanghai:20260523T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第7轮\n比分: 淮安队 0:1 盐城队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第7轮\n比分: 淮安队 0:1 盐城队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第7轮-连云港队 1:3 徐州队
-DTSTART:20260523T114000Z
-DTEND:20260523T134000Z
+DTSTART;TZID=Asia/Shanghai:20260523T194000
+DTEND;TZID=Asia/Shanghai:20260523T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第7轮\n比分: 连云港队 1:3 徐州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第7轮\n比分: 连云港队 1:3 徐州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第7轮-宿迁队 1:2 南通队
-DTSTART:20260523T114000Z
-DTEND:20260523T134000Z
+DTSTART;TZID=Asia/Shanghai:20260523T194000
+DTEND;TZID=Asia/Shanghai:20260523T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第7轮\n比分: 宿迁队 1:2 南通队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第7轮\n比分: 宿迁队 1:2 南通队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第8轮-泰州队 1:2 苏州队
-DTSTART:20260530T114000Z
-DTEND:20260530T134000Z
+DTSTART;TZID=Asia/Shanghai:20260530T194000
+DTEND;TZID=Asia/Shanghai:20260530T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 泰州队 1:2 苏州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 泰州队 1:2 苏州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第8轮-盐城队 1:0 扬州队
-DTSTART:20260530T114000Z
-DTEND:20260530T134000Z
+DTSTART;TZID=Asia/Shanghai:20260530T194000
+DTEND;TZID=Asia/Shanghai:20260530T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 盐城队 1:0 扬州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 盐城队 1:0 扬州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第8轮-镇江队 0:2 常州队
-DTSTART:20260530T114000Z
-DTEND:20260530T134000Z
+DTSTART;TZID=Asia/Shanghai:20260530T194000
+DTEND;TZID=Asia/Shanghai:20260530T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 镇江队 0:2 常州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 镇江队 0:2 常州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第8轮-无锡队 0:2 南京队
-DTSTART:20260530T114000Z
-DTEND:20260530T134000Z
+DTSTART;TZID=Asia/Shanghai:20260530T194000
+DTEND;TZID=Asia/Shanghai:20260530T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 无锡队 0:2 南京队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 无锡队 0:2 南京队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第9轮-徐州队 0:1 无锡队
-DTSTART:20260613T114000Z
-DTEND:20260613T134000Z
+DTSTART;TZID=Asia/Shanghai:20260613T194000
+DTEND;TZID=Asia/Shanghai:20260613T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第9轮\n比分: 徐州队 0:1 无锡队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第9轮\n比分: 徐州队 0:1 无锡队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第9轮-宿迁队 3:0 镇江队
-DTSTART:20260613T114000Z
-DTEND:20260613T134000Z
+DTSTART;TZID=Asia/Shanghai:20260613T194000
+DTEND;TZID=Asia/Shanghai:20260613T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第9轮\n比分: 宿迁队 3:0 镇江队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第9轮\n比分: 宿迁队 3:0 镇江队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第9轮-南通队 0:1 泰州队
-DTSTART:20260613T114000Z
-DTEND:20260613T134000Z
+DTSTART;TZID=Asia/Shanghai:20260613T194000
+DTEND;TZID=Asia/Shanghai:20260613T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第9轮\n比分: 南通队 0:1 泰州队\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第9轮\n比分: 南通队 0:1 泰州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第10轮-常州队 vs 盐城队
-DTSTART:20260620T114000Z
-DTEND:20260620T134000Z
+DTSTART;TZID=Asia/Shanghai:20260620T194000
+DTEND;TZID=Asia/Shanghai:20260620T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第10轮-扬州队 vs 连云港队
-DTSTART:20260620T114000Z
-DTEND:20260620T134000Z
+DTSTART;TZID=Asia/Shanghai:20260620T194000
+DTEND;TZID=Asia/Shanghai:20260620T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第10轮-苏州队 vs 南通队
-DTSTART:20260620T114000Z
-DTEND:20260620T134000Z
+DTSTART;TZID=Asia/Shanghai:20260620T194000
+DTEND;TZID=Asia/Shanghai:20260620T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第10轮-南京队 vs 淮安队
-DTSTART:20260620T114000Z
-DTEND:20260620T134000Z
+DTSTART;TZID=Asia/Shanghai:20260620T194000
+DTEND;TZID=Asia/Shanghai:20260620T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第11轮-淮安队 vs 无锡队
-DTSTART:20260627T114000Z
-DTEND:20260627T134000Z
+DTSTART;TZID=Asia/Shanghai:20260627T194000
+DTEND;TZID=Asia/Shanghai:20260627T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第11轮-镇江队 vs 苏州队
-DTSTART:20260627T114000Z
-DTEND:20260627T134000Z
+DTSTART;TZID=Asia/Shanghai:20260627T194000
+DTEND;TZID=Asia/Shanghai:20260627T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第11轮-连云港队 vs 常州队
-DTSTART:20260627T114000Z
-DTEND:20260627T134000Z
+DTSTART;TZID=Asia/Shanghai:20260627T194000
+DTEND;TZID=Asia/Shanghai:20260627T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第12轮-盐城队 vs 苏州队
-DTSTART:20260704T114000Z
-DTEND:20260704T134000Z
+DTSTART;TZID=Asia/Shanghai:20260704T194000
+DTEND;TZID=Asia/Shanghai:20260704T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第12轮-无锡队 vs 宿迁队
-DTSTART:20260704T114000Z
-DTEND:20260704T134000Z
+DTSTART;TZID=Asia/Shanghai:20260704T194000
+DTEND;TZID=Asia/Shanghai:20260704T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第12轮-泰州队 vs 镇江队
-DTSTART:20260704T114000Z
-DTEND:20260704T134000Z
+DTSTART;TZID=Asia/Shanghai:20260704T194000
+DTEND;TZID=Asia/Shanghai:20260704T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第12轮-徐州队 vs 南京队
-DTSTART:20260704T114000Z
-DTEND:20260704T134000Z
+DTSTART;TZID=Asia/Shanghai:20260704T194000
+DTEND;TZID=Asia/Shanghai:20260704T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第13轮-宿迁队 vs 常州队
-DTSTART:20260711T114000Z
-DTEND:20260711T134000Z
+DTSTART;TZID=Asia/Shanghai:20260711T194000
+DTEND;TZID=Asia/Shanghai:20260711T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第13轮-南京队 vs 连云港队
-DTSTART:20260711T114000Z
-DTEND:20260711T134000Z
+DTSTART;TZID=Asia/Shanghai:20260711T194000
+DTEND;TZID=Asia/Shanghai:20260711T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第13轮-南通队 vs 扬州队
-DTSTART:20260711T114000Z
-DTEND:20260711T134000Z
+DTSTART;TZID=Asia/Shanghai:20260711T194000
+DTEND;TZID=Asia/Shanghai:20260711T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第14轮-镇江队 vs 淮安队
-DTSTART:20260725T114000Z
-DTEND:20260725T134000Z
+DTSTART;TZID=Asia/Shanghai:20260725T194000
+DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第14轮-苏州队 vs 无锡队
-DTSTART:20260725T114000Z
-DTEND:20260725T134000Z
+DTSTART;TZID=Asia/Shanghai:20260725T194000
+DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第14轮-常州队 vs 泰州队
-DTSTART:20260725T114000Z
-DTEND:20260725T134000Z
+DTSTART;TZID=Asia/Shanghai:20260725T194000
+DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第14轮-扬州队 vs 徐州队
-DTSTART:20260725T114000Z
-DTEND:20260725T134000Z
+DTSTART;TZID=Asia/Shanghai:20260725T194000
+DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第15轮-盐城队 vs 南京队
-DTSTART:20260801T114000Z
-DTEND:20260801T134000Z
+DTSTART;TZID=Asia/Shanghai:20260801T194000
+DTEND;TZID=Asia/Shanghai:20260801T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第15轮-淮安队 vs 南通队
-DTSTART:20260801T114000Z
-DTEND:20260801T134000Z
+DTSTART;TZID=Asia/Shanghai:20260801T194000
+DTEND;TZID=Asia/Shanghai:20260801T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第15轮-连云港队 vs 宿迁队
-DTSTART:20260801T114000Z
-DTEND:20260801T134000Z
+DTSTART;TZID=Asia/Shanghai:20260801T194000
+DTEND;TZID=Asia/Shanghai:20260801T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第16轮-无锡队 vs 盐城队
-DTSTART:20260808T114000Z
-DTEND:20260808T134000Z
+DTSTART;TZID=Asia/Shanghai:20260808T194000
+DTEND;TZID=Asia/Shanghai:20260808T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第16轮-泰州队 vs 连云港队
-DTSTART:20260808T114000Z
-DTEND:20260808T134000Z
+DTSTART;TZID=Asia/Shanghai:20260808T194000
+DTEND;TZID=Asia/Shanghai:20260808T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第16轮-徐州队 vs 常州队
-DTSTART:20260808T114000Z
-DTEND:20260808T134000Z
+DTSTART;TZID=Asia/Shanghai:20260808T194000
+DTEND;TZID=Asia/Shanghai:20260808T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第17轮-南通队 vs 镇江队
-DTSTART:20260815T114000Z
-DTEND:20260815T134000Z
+DTSTART;TZID=Asia/Shanghai:20260815T194000
+DTEND;TZID=Asia/Shanghai:20260815T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第17轮-宿迁队 vs 苏州队
-DTSTART:20260815T114000Z
-DTEND:20260815T134000Z
+DTSTART;TZID=Asia/Shanghai:20260815T194000
+DTEND;TZID=Asia/Shanghai:20260815T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第17轮-南京队 vs 扬州队
-DTSTART:20260815T114000Z
-DTEND:20260815T134000Z
+DTSTART;TZID=Asia/Shanghai:20260815T194000
+DTEND;TZID=Asia/Shanghai:20260815T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第18轮-苏州队 vs 南京队
-DTSTART:20260822T114000Z
-DTEND:20260822T134000Z
+DTSTART;TZID=Asia/Shanghai:20260822T194000
+DTEND;TZID=Asia/Shanghai:20260822T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第18轮-镇江队 vs 徐州队
-DTSTART:20260822T114000Z
-DTEND:20260822T134000Z
+DTSTART;TZID=Asia/Shanghai:20260822T194000
+DTEND;TZID=Asia/Shanghai:20260822T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第18轮-泰州队 vs 淮安队
-DTSTART:20260822T114000Z
-DTEND:20260822T134000Z
+DTSTART;TZID=Asia/Shanghai:20260822T194000
+DTEND;TZID=Asia/Shanghai:20260822T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第19轮-扬州队 vs 宿迁队
-DTSTART:20260829T114000Z
-DTEND:20260829T134000Z
+DTSTART;TZID=Asia/Shanghai:20260829T194000
+DTEND;TZID=Asia/Shanghai:20260829T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第19轮-常州队 vs 无锡队
-DTSTART:20260829T114000Z
-DTEND:20260829T134000Z
+DTSTART;TZID=Asia/Shanghai:20260829T194000
+DTEND;TZID=Asia/Shanghai:20260829T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第19轮-淮安队 vs 连云港队
-DTSTART:20260829T114000Z
-DTEND:20260829T134000Z
+DTSTART;TZID=Asia/Shanghai:20260829T194000
+DTEND;TZID=Asia/Shanghai:20260829T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第20轮-连云港队 vs 南通队
-DTSTART:20260905T114000Z
-DTEND:20260905T134000Z
+DTSTART;TZID=Asia/Shanghai:20260905T194000
+DTEND;TZID=Asia/Shanghai:20260905T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/lianyungang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第20轮-盐城队 vs 徐州队
-DTSTART:20260905T114000Z
-DTEND:20260905T134000Z
+DTSTART;TZID=Asia/Shanghai:20260905T194000
+DTEND;TZID=Asia/Shanghai:20260905T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第20轮-南京队 vs 泰州队
-DTSTART:20260905T114000Z
-DTEND:20260905T134000Z
+DTSTART;TZID=Asia/Shanghai:20260905T194000
+DTEND;TZID=Asia/Shanghai:20260905T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第21轮-宿迁队 vs 泰州队
-DTSTART:20260912T114000Z
-DTEND:20260912T134000Z
+DTSTART;TZID=Asia/Shanghai:20260912T194000
+DTEND;TZID=Asia/Shanghai:20260912T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第21轮-盐城队 vs 南通队
-DTSTART:20260912T114000Z
-DTEND:20260912T134000Z
+DTSTART;TZID=Asia/Shanghai:20260912T194000
+DTEND;TZID=Asia/Shanghai:20260912T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第21轮-南京队 vs 镇江队
-DTSTART:20260912T114000Z
-DTEND:20260912T134000Z
+DTSTART;TZID=Asia/Shanghai:20260912T194000
+DTEND;TZID=Asia/Shanghai:20260912T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第21轮-无锡队 vs 扬州队
-DTSTART:20260912T114000Z
-DTEND:20260912T134000Z
+DTSTART;TZID=Asia/Shanghai:20260912T194000
+DTEND;TZID=Asia/Shanghai:20260912T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第21轮-徐州队 vs 淮安队
-DTSTART:20260912T114000Z
-DTEND:20260912T134000Z
+DTSTART;TZID=Asia/Shanghai:20260912T194000
+DTEND;TZID=Asia/Shanghai:20260912T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第21轮-常州队 vs 苏州队
-DTSTART:20260912T114000Z
-DTEND:20260912T134000Z
+DTSTART;TZID=Asia/Shanghai:20260912T194000
+DTEND;TZID=Asia/Shanghai:20260912T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第21轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第22轮-苏州队 vs 徐州队
-DTSTART:20260919T114000Z
-DTEND:20260919T134000Z
+DTSTART;TZID=Asia/Shanghai:20260919T194000
+DTEND;TZID=Asia/Shanghai:20260919T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/xuzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第22轮-南通队 vs 无锡队
-DTSTART:20260919T114000Z
-DTEND:20260919T134000Z
+DTSTART;TZID=Asia/Shanghai:20260919T194000
+DTEND;TZID=Asia/Shanghai:20260919T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/nantong.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/wuxi.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第22轮-扬州队 vs 常州队
-DTSTART:20260919T114000Z
-DTEND:20260919T134000Z
+DTSTART;TZID=Asia/Shanghai:20260919T194000
+DTEND;TZID=Asia/Shanghai:20260919T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yangzhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/changzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第22轮-镇江队 vs 宿迁队
-DTSTART:20260919T114000Z
-DTEND:20260919T134000Z
+DTSTART;TZID=Asia/Shanghai:20260919T194000
+DTEND;TZID=Asia/Shanghai:20260919T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/zhenjiang.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第22轮-淮安队 vs 宿迁队
-DTSTART:20260919T114000Z
-DTEND:20260919T134000Z
+DTSTART;TZID=Asia/Shanghai:20260919T194000
+DTEND;TZID=Asia/Shanghai:20260919T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/huaian.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:苏超第22轮-泰州队 vs 盐城队
-DTSTART:20260919T114000Z
-DTEND:20260919T134000Z
+DTSTART;TZID=Asia/Shanghai:20260919T194000
+DTEND;TZID=Asia/Shanghai:20260919T214000
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:file:///Volumes/Personal/Suchao_Calender/icon/yancheng.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 END:VCALENDAR

@@ -1,0 +1,58 @@
+# 系统文件
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# 编辑器配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 开发环境
+.env
+.env.local
+.env.*.local
+
+# 敏感信息（绝对不要上传）
+*.key
+*.pem
+*.pfx
+*.p12
+*.keystore
+secrets.json
+credentials.json
+*.token
+.auth
+.credentials
+
+# Obsidian本地配置（保留.obsidian但排除某些文件）
+.obsidian/workspace.json
+.obsidian/cache/
+.obsidian/sync.json
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+
+# Node modules（如果将来使用）
+node_modules/
+package-lock.json
+
+# Python虚拟环境
+venv/
+env/
+__pycache__/
+*.pyc
+
+# 本地测试文件
+test-*.ics
+temp/

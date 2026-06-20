@@ -255,36 +255,36 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第9轮\n比分: 南通队 0:1 泰州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第10轮-常州 VS 盐城
+SUMMARY:第10轮-常州 2:1 盐城
 DTSTART;TZID=Asia/Shanghai:20260620T194000
 DTEND;TZID=Asia/Shanghai:20260620T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/changzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yancheng.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n比分: 常州队 2:1 盐城队\n时间: 北京时间 19:40\n更新时间: 2026/06/20
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第10轮-扬州 VS 连云港
+SUMMARY:第10轮-扬州 1:0 连云港
 DTSTART;TZID=Asia/Shanghai:20260620T194000
 DTEND;TZID=Asia/Shanghai:20260620T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yangzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n比分: 扬州队 1:0 连云港队\n时间: 北京时间 19:40\n更新时间: 2026/06/20
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第10轮-苏州 VS 南通
+SUMMARY:第10轮-苏州 2:2 南通
 DTSTART;TZID=Asia/Shanghai:20260620T194000
 DTEND;TZID=Asia/Shanghai:20260620T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nantong.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n比分: 苏州队 2:2 南通队\n时间: 北京时间 19:40\n更新时间: 2026/06/20
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第10轮-南京 VS 淮安
+SUMMARY:第10轮-南京 2:1 淮安
 DTSTART;TZID=Asia/Shanghai:20260620T194000
 DTEND;TZID=Asia/Shanghai:20260620T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/huaian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n比分: 南京队 2:1 淮安队\n时间: 北京时间 19:40\n更新时间: 2026/06/20
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第11轮-淮安 VS 无锡

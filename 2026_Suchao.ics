@@ -287,28 +287,28 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第10轮\n比分: 南京队 2:1 淮安队\n时间: 北京时间 19:40\n更新时间: 2026/06/20
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第11轮-淮安 VS 无锡
+SUMMARY:第11轮-淮安 1:3 无锡
 DTSTART;TZID=Asia/Shanghai:20260627T194000
 DTEND;TZID=Asia/Shanghai:20260627T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/huaian.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n比分: 淮安队 1:3 无锡队\n时间: 北京时间 19:40\n更新时间: 2026/06/28
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第11轮-镇江 VS 苏州
+SUMMARY:第11轮-镇江 0:2 苏州
 DTSTART;TZID=Asia/Shanghai:20260627T194000
 DTEND;TZID=Asia/Shanghai:20260627T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/zhenjiang.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n比分: 镇江队 0:2 苏州队\n时间: 北京时间 19:40\n更新时间: 2026/06/28
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第11轮-连云港 VS 常州
+SUMMARY:第11轮-连云港 0:1 常州
 DTSTART;TZID=Asia/Shanghai:20260627T194000
 DTEND;TZID=Asia/Shanghai:20260627T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/lianyungang.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/changzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n比分: 连云港队 0:1 常州队\n时间: 北京时间 19:40\n更新时间: 2026/06/28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第12轮-盐城 VS 苏州

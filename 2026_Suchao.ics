@@ -311,36 +311,36 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第11轮\n比分: 连云港队 0:1 常州队\n时间: 北京时间 19:40\n更新时间: 2026/06/28
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第12轮-盐城 VS 苏州
+SUMMARY:第12轮-盐城 0:0 苏州
 DTSTART;TZID=Asia/Shanghai:20260704T194000
 DTEND;TZID=Asia/Shanghai:20260704T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n比分: 盐城队 0:0 苏州队\n时间: 北京时间 19:40\n更新时间: 2026/07/06
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第12轮-无锡 VS 宿迁
+SUMMARY:第12轮-无锡 2:4 宿迁
 DTSTART;TZID=Asia/Shanghai:20260704T194000
 DTEND;TZID=Asia/Shanghai:20260704T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n比分: 无锡队 2:4 宿迁队\n时间: 北京时间 19:40\n更新时间: 2026/07/06
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第12轮-泰州 VS 镇江
+SUMMARY:第12轮-泰州 1:1 镇江
 DTSTART;TZID=Asia/Shanghai:20260704T194000
 DTEND;TZID=Asia/Shanghai:20260704T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/zhenjiang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n比分: 泰州队 1:1 镇江队\n时间: 北京时间 19:40\n更新时间: 2026/07/06
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第12轮-徐州 VS 南京
+SUMMARY:第12轮-徐州 1:0 南京
 DTSTART;TZID=Asia/Shanghai:20260704T194000
 DTEND;TZID=Asia/Shanghai:20260704T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/xuzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n比分: 徐州队 1:0 南京队\n时间: 北京时间 19:40\n更新时间: 2026/07/06
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第13轮-宿迁 VS 常州

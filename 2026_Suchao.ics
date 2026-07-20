@@ -343,28 +343,28 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第12轮\n比分: 徐州队 1:0 南京队\n时间: 北京时间 19:40\n更新时间: 2026/07/06
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第13轮-宿迁 VS 常州
-DTSTART;TZID=Asia/Shanghai:20260711T194000
-DTEND;TZID=Asia/Shanghai:20260711T214000
+SUMMARY:第13轮-宿迁队 0:3 常州队
+DTSTART;TZID=Asia/Shanghai:20260718T194000
+DTEND;TZID=Asia/Shanghai:20260718T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suqian.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/changzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n比分: 宿迁队 0:3 常州队\n时间: 北京时间 19:40\n原定日期: 7月11日\n调整原因: 台风巴威影响\n更新时间: 2026/07/20
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第13轮-南京 VS 连云港
-DTSTART;TZID=Asia/Shanghai:20260711T194000
-DTEND;TZID=Asia/Shanghai:20260711T214000
+DTSTART;TZID=Asia/Shanghai:20260725T194000
+DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n时间: 北京时间 19:40\n原定日期: 7月11日\n场地变更: 江苏省五台山体育中心体育场\n调整原因: 台风巴威影响\n更新时间: 2026/07/20
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第13轮-南通 VS 扬州
-DTSTART;TZID=Asia/Shanghai:20260711T194000
-DTEND;TZID=Asia/Shanghai:20260711T214000
+SUMMARY:第13轮-南通队 1:1 扬州队
+DTSTART;TZID=Asia/Shanghai:20260718T194000
+DTEND;TZID=Asia/Shanghai:20260718T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nantong.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yangzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n比分: 南通队 1:1 扬州队\n时间: 北京时间 19:40\n原定日期: 7月11日\n调整原因: 台风巴威影响\n更新时间: 2026/07/20
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第14轮-镇江 VS 淮安

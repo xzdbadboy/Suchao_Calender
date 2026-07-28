@@ -223,12 +223,12 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 镇江队 0:2 常州队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第8轮-无锡 0:2 南京
+SUMMARY:第8轮-无锡 0:0 南京
 DTSTART;TZID=Asia/Shanghai:20260530T194000
 DTEND;TZID=Asia/Shanghai:20260530T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 无锡队 0:2 南京队\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第8轮\n比分: 无锡队 0:0 南京队\n时间: 北京时间 19:40\n更新时间: 2026/07/28（修正：原误录为0:2，据荔枝新闻报道实为0:0）
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第9轮-徐州 0:1 无锡
@@ -351,12 +351,12 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n比分: 宿迁队 0:3 常州队\n时间: 北京时间 19:40\n原定日期: 7月11日\n调整原因: 台风巴威影响\n更新时间: 2026/07/20
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第13轮-南京 VS 连云港
+SUMMARY:第13轮-南京 0:0 连云港
 DTSTART;TZID=Asia/Shanghai:20260725T194000
 DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n时间: 北京时间 19:40\n原定日期: 7月11日\n场地变更: 江苏省五台山体育中心体育场\n调整原因: 台风巴威影响\n更新时间: 2026/07/20
+DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n比分: 南京队 0:0 连云港队\n时间: 北京时间 19:40\n原定日期: 7月11日\n场地变更: 江苏省五台山体育中心体育场\n调整原因: 台风巴威影响\n更新时间: 2026/07/28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第13轮-南通队 1:1 扬州队
@@ -367,36 +367,36 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第13轮\n比分: 南通队 1:1 扬州队\n时间: 北京时间 19:40\n原定日期: 7月11日\n调整原因: 台风巴威影响\n更新时间: 2026/07/20
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第14轮-镇江 VS 淮安
+SUMMARY:第14轮-镇江 2:1 淮安
 DTSTART;TZID=Asia/Shanghai:20260725T194000
 DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/zhenjiang.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/huaian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n比分: 镇江队 2:1 淮安队\n时间: 北京时间 19:40\n更新时间: 2026/07/28
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第14轮-苏州 VS 无锡
+SUMMARY:第14轮-苏州 0:1 无锡
 DTSTART;TZID=Asia/Shanghai:20260725T194000
 DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n比分: 苏州队 0:1 无锡队\n时间: 北京时间 19:40\n更新时间: 2026/07/28
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第14轮-常州 VS 泰州
+SUMMARY:第14轮-常州 0:0 泰州
 DTSTART;TZID=Asia/Shanghai:20260725T194000
 DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/changzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/taizhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n比分: 常州队 0:0 泰州队\n时间: 北京时间 19:40\n更新时间: 2026/07/28
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第14轮-扬州 VS 徐州
+SUMMARY:第14轮-扬州 0:0 徐州
 DTSTART;TZID=Asia/Shanghai:20260725T194000
 DTEND;TZID=Asia/Shanghai:20260725T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yangzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/xuzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n比分: 扬州队 0:0 徐州队\n时间: 北京时间 19:40\n更新时间: 2026/07/28
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第15轮-盐城 VS 南京

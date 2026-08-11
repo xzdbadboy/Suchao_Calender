@@ -399,52 +399,52 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第14轮\n比分: 扬州队 0:0 徐州队\n时间: 北京时间 19:40\n更新时间: 2026/07/28
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第15轮-盐城 VS 南京
+SUMMARY:第15轮-盐城 0:2 南京
 DTSTART;TZID=Asia/Shanghai:20260801T194000
 DTEND;TZID=Asia/Shanghai:20260801T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n比分: 盐城队 0:2 南京队\n时间: 北京时间 19:40\n更新时间: 2026/08/11
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第15轮-淮安 VS 南通
+SUMMARY:第15轮-淮安 0:1 南通
 DTSTART;TZID=Asia/Shanghai:20260801T194000
 DTEND;TZID=Asia/Shanghai:20260801T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/huaian.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nantong.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n比分: 淮安队 0:1 南通队\n时间: 北京时间 19:40\n更新时间: 2026/08/11
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第15轮-连云港 VS 宿迁
+SUMMARY:第15轮-连云港 0:0 宿迁
 DTSTART;TZID=Asia/Shanghai:20260801T194000
 DTEND;TZID=Asia/Shanghai:20260801T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/lianyungang.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第15轮\n比分: 连云港队 0:0 宿迁队\n时间: 北京时间 19:40\n更新时间: 2026/08/11
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第16轮-无锡 VS 盐城
+SUMMARY:第16轮-无锡 1:1 盐城
 DTSTART;TZID=Asia/Shanghai:20260808T194000
 DTEND;TZID=Asia/Shanghai:20260808T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yancheng.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n比分: 无锡队 1:1 盐城队\n时间: 北京时间 19:40\n更新时间: 2026/08/11
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第16轮-泰州 VS 连云港
+SUMMARY:第16轮-泰州 1:0 连云港
 DTSTART;TZID=Asia/Shanghai:20260808T194000
 DTEND;TZID=Asia/Shanghai:20260808T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n比分: 泰州队 1:0 连云港队\n时间: 北京时间 19:40\n更新时间: 2026/08/11
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第16轮-徐州 VS 常州
+SUMMARY:第16轮-徐州 2:0 常州
 DTSTART;TZID=Asia/Shanghai:20260808T194000
 DTEND;TZID=Asia/Shanghai:20260808T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/xuzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/changzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n比分: 徐州队 2:0 常州队\n时间: 北京时间 19:40\n更新时间: 2026/08/11
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第17轮-南通 VS 镇江

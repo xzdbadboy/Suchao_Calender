@@ -447,28 +447,28 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第16轮\n比分: 徐州队 2:0 常州队\n时间: 北京时间 19:40\n更新时间: 2026/08/11
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第17轮-南通 VS 镇江
+SUMMARY:第17轮-南通 1:0 镇江
 DTSTART;TZID=Asia/Shanghai:20260815T194000
 DTEND;TZID=Asia/Shanghai:20260815T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nantong.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/zhenjiang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n比分: 南通队 1:0 镇江队\n时间: 北京时间 19:40\n更新时间: 2026/08/15
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第17轮-宿迁 VS 苏州
+SUMMARY:第17轮-宿迁 2:2 苏州
 DTSTART;TZID=Asia/Shanghai:20260815T194000
 DTEND;TZID=Asia/Shanghai:20260815T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suqian.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n比分: 宿迁队 2:2 苏州队\n时间: 北京时间 19:40\n更新时间: 2026/08/15
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第17轮-南京 VS 扬州
+SUMMARY:第17轮-南京 0:1 扬州
 DTSTART;TZID=Asia/Shanghai:20260815T194000
 DTEND;TZID=Asia/Shanghai:20260815T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yangzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n比分: 南京队 0:1 扬州队\n时间: 北京时间 19:40\n更新时间: 2026/08/15
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第18轮-苏州 VS 南京

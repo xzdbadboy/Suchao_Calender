@@ -471,28 +471,28 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第17轮\n比分: 南京队 0:1 扬州队\n时间: 北京时间 19:40\n更新时间: 2026/08/15
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第18轮-苏州 VS 南京
+SUMMARY:第18轮-苏州 1:0 南京
 DTSTART;TZID=Asia/Shanghai:20260822T194000
 DTEND;TZID=Asia/Shanghai:20260822T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nanjing.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n比分: 苏州队 1:0 南京队\n时间: 北京时间 19:40\n更新时间: 2026/08/22
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第18轮-镇江 VS 徐州
+SUMMARY:第18轮-镇江 1:1 徐州
 DTSTART;TZID=Asia/Shanghai:20260822T194000
 DTEND;TZID=Asia/Shanghai:20260822T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/zhenjiang.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/xuzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n比分: 镇江队 1:1 徐州队\n时间: 北京时间 19:40\n更新时间: 2026/08/22
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第18轮-泰州 VS 淮安
+SUMMARY:第18轮-泰州 1:1 淮安
 DTSTART;TZID=Asia/Shanghai:20260822T194000
 DTEND;TZID=Asia/Shanghai:20260822T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/huaian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n比分: 泰州队 1:1 淮安队\n时间: 北京时间 19:40\n更新时间: 2026/08/22
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第19轮-扬州 VS 宿迁

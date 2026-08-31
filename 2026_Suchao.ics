@@ -495,28 +495,28 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第18轮\n比分: 泰州队 1:1 淮安队\n时间: 北京时间 19:40\n更新时间: 2026/08/22
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第19轮-扬州 VS 宿迁
+SUMMARY:第19轮-扬州 0:1 宿迁
 DTSTART;TZID=Asia/Shanghai:20260829T194000
 DTEND;TZID=Asia/Shanghai:20260829T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yangzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suqian.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n比分: 扬州队 0:1 宿迁队\n时间: 北京时间 19:40\n更新时间: 2026/08/29
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第19轮-常州 VS 无锡
+SUMMARY:第19轮-常州 1:5 无锡
 DTSTART;TZID=Asia/Shanghai:20260829T194000
 DTEND;TZID=Asia/Shanghai:20260829T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/changzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n比分: 常州队 1:5 无锡队\n时间: 北京时间 19:40\n更新时间: 2026/08/29
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第19轮-淮安 VS 连云港
+SUMMARY:第19轮-淮安 2:0 连云港
 DTSTART;TZID=Asia/Shanghai:20260829T194000
 DTEND;TZID=Asia/Shanghai:20260829T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/huaian.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/lianyungang.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n比分: 淮安队 2:0 连云港队\n时间: 北京时间 19:40\n更新时间: 2026/08/29
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第20轮-连云港 VS 南通

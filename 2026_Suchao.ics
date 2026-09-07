@@ -519,28 +519,28 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第19轮\n比分: 淮安队 2:0 连云港队\n时间: 北京时间 19:40\n更新时间: 2026/08/29
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第20轮-连云港 VS 南通
+SUMMARY:第20轮-连云港 0:1 南通
 DTSTART;TZID=Asia/Shanghai:20260905T194000
 DTEND;TZID=Asia/Shanghai:20260905T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/lianyungang.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nantong.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n比分: 连云港队 0:1 南通队\n时间: 北京时间 19:40\n更新时间: 2026/09/05
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第20轮-盐城 VS 徐州
+SUMMARY:第20轮-盐城 1:1 徐州
 DTSTART;TZID=Asia/Shanghai:20260905T194000
 DTEND;TZID=Asia/Shanghai:20260905T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/xuzhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n比分: 盐城队 1:1 徐州队\n时间: 北京时间 19:40\n更新时间: 2026/09/05
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:第20轮-南京 VS 泰州
+SUMMARY:第20轮-南京 2:2 泰州
 DTSTART;TZID=Asia/Shanghai:20260905T194000
 DTEND;TZID=Asia/Shanghai:20260905T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nanjing.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/taizhou.png
-DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n时间: 北京时间 19:40\n更新时间: 2026/06/19
+DESCRIPTION:阶段: 常规赛\n轮次: 第20轮\n比分: 南京队 2:2 泰州队\n时间: 北京时间 19:40\n更新时间: 2026/09/05
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:第21轮-宿迁 VS 泰州

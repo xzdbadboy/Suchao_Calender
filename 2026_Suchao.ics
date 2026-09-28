@@ -638,4 +638,98 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yancheng.png
 DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n比分: 泰州队 2:0 盐城队\n时间: 北京时间 19:40\n更新时间: 2026/09/19
 END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1/4决赛首回合-徐州 vs 无锡
+DTSTART;TZID=Asia/Shanghai:20261003T194000
+DTEND;TZID=Asia/Shanghai:20261003T214000
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/xuzhou.png
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 首回合\n对阵: 徐州队(主) vs 无锡队\n签位: A · 徐州奥体中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1/4决赛首回合-泰州 vs 南通
+DTSTART;TZID=Asia/Shanghai:20261003T194000
+DTEND;TZID=Asia/Shanghai:20261003T214000
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/taizhou.png
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nantong.png
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 首回合\n对阵: 泰州队(主) vs 南通队\n签位: B · 泰州体育公园体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1/4决赛首回合-盐城 vs 宿迁
+DTSTART;TZID=Asia/Shanghai:20261004T194000
+DTEND;TZID=Asia/Shanghai:20261004T214000
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yancheng.png
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suqian.png
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 首回合\n对阵: 盐城队(主) vs 宿迁队\n签位: C · 盐城奥体中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1/4决赛首回合-苏州 vs 常州
+DTSTART;TZID=Asia/Shanghai:20261004T194000
+DTEND;TZID=Asia/Shanghai:20261004T214000
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suzhou.png
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/changzhou.png
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 首回合\n对阵: 苏州队(主) vs 常州队\n签位: D · 苏州市体育中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1/4决赛次回合-无锡 vs 徐州
+DTSTART;TZID=Asia/Shanghai:20261011T194000
+DTEND;TZID=Asia/Shanghai:20261011T214000
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/xuzhou.png
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 次回合\n对阵: 无锡队(主) vs 徐州队\n签位: A · 宜兴市体育中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1/4决赛次回合-南通 vs 泰州
+DTSTART;TZID=Asia/Shanghai:20261011T194000
+DTEND;TZID=Asia/Shanghai:20261011T214000
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nantong.png
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/taizhou.png
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 次回合\n对阵: 南通队(主) vs 泰州队\n签位: B · 南通体育会展中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1/4决赛次回合-宿迁 vs 盐城
+DTSTART;TZID=Asia/Shanghai:20261011T194000
+DTEND;TZID=Asia/Shanghai:20261011T214000
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suqian.png
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yancheng.png
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 次回合\n对阵: 宿迁队(主) vs 盐城队\n签位: C · 宿迁奥体中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:1/4决赛次回合-常州 vs 苏州
+DTSTART;TZID=Asia/Shanghai:20261011T194000
+DTEND;TZID=Asia/Shanghai:20261011T214000
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/changzhou.png
+ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/suzhou.png
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 次回合\n对阵: 常州队(主) vs 苏州队\n签位: D · 常州奥体中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:半决赛1首回合-待定
+DTSTART;TZID=Asia/Shanghai:20261017T194000
+DTEND;TZID=Asia/Shanghai:20261017T214000
+DESCRIPTION:阶段: 淘汰赛\n轮次: 半决赛1 首回合\n对阵: A组胜者(无锡/徐州) vs B组胜者(南通/泰州)\n两回合总比分制 · 对阵待八强赛后确定\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:半决赛2首回合-待定
+DTSTART;TZID=Asia/Shanghai:20261017T194000
+DTEND;TZID=Asia/Shanghai:20261017T214000
+DESCRIPTION:阶段: 淘汰赛\n轮次: 半决赛2 首回合\n对阵: C组胜者(宿迁/盐城) vs D组胜者(常州/苏州)\n两回合总比分制 · 对阵待八强赛后确定\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:半决赛1次回合-待定
+DTSTART;TZID=Asia/Shanghai:20261024T194000
+DTEND;TZID=Asia/Shanghai:20261024T214000
+DESCRIPTION:阶段: 淘汰赛\n轮次: 半决赛1 次回合\n对阵: B组胜者 vs A组胜者\n两回合总比分制 · 对阵待八强赛后确定\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:半决赛2次回合-待定
+DTSTART;TZID=Asia/Shanghai:20261024T194000
+DTEND;TZID=Asia/Shanghai:20261024T214000
+DESCRIPTION:阶段: 淘汰赛\n轮次: 半决赛2 次回合\n对阵: D组胜者 vs C组胜者\n两回合总比分制 · 对阵待八强赛后确定\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:总决赛-待定
+DTSTART;TZID=Asia/Shanghai:20261031T194000
+DTEND;TZID=Asia/Shanghai:20261031T214000
+DESCRIPTION:阶段: 淘汰赛\n轮次: 总决赛\n对阵: 半决赛1胜者 vs 半决赛2胜者\n南京奥体中心体育场 · 一场定胜负\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+END:VEVENT
 END:VCALENDAR

@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """苏超淘汰赛完赛后更新比分。
 
-只在数据源确认完赛后写入最终比分。加时、点球未结束或字段不完整时不写。
-决胜场（次回合、总决赛）若 90 分钟打平，会等到加时/点球字段齐全，或完赛超过 3 小时仍无这些字段，才写入。
+只在比赛当天结束后查询一次。完赛就写入最终比分；没有结果时再查是否延期，
+延期则改写开球时间，并只为新开球时间登记一次赛后查询。
 出线后同步半决赛/决赛对阵，并更新 README。确认有变化后自动提交并推送。
 """
 
@@ -369,13 +369,6 @@ def result_ready(info: dict, deciding: bool, now: datetime) -> tuple[bool, str]:
         return False, f"完赛标记未识别（{info['period']}）"
     if not info["period"] and not info["end"]:
         return False, "缺少完赛时间"
-    display = info["display"]
-    level = display[0] == display[1]
-    if deciding and level and not info["ps"]:
-        stale_base = info["end"] or (info["start"] + timedelta(hours=6) if info["start"] else None)
-        if stale_base and now - stale_base >= timedelta(hours=3):
-            return True, "平局且超过3小时仍无加时/点球字段，按现有比分写入"
-        return False, "决胜场平局，等待加时或点球"
     return True, "完赛"
 
 
@@ -498,7 +491,7 @@ def rewrite_description(event: Event, updates: dict[str, str], drop: set[str] | 
     kept = [(k, v) for k, v in desc_items(event.description()) if k not in updates and k not in drop]
     merged = dict(kept)
     merged.update(updates)
-    order = ["阶段", "轮次", "对阵", "比分", "90分钟", "加时", "点球", "两回合总比分", "签位", "地点", "时间", "更新时间"]
+    order = ["阶段", "轮次", "对阵", "比分", "90分钟", "加时", "点球", "两回合总比分", "延期", "签位", "地点", "时间", "更新时间"]
     items = []
     used = set()
     for key in order:
@@ -644,7 +637,7 @@ def render_block(events: list[Event], winners: dict[str, str], notes: dict[str, 
         "",
         *rows,
         "",
-        "比分在比赛结束（含加时、点球）并经数据源确认为完赛后自动写入，进行中比分不会提前更新。",
+        "每场比赛只在当天结束后查询一次。完赛即写入最终比分；没有结果时检查延期并改写赛程。进行中比分不会提前更新。",
         "",
         "## 淘汰赛进展",
         "",
@@ -747,7 +740,107 @@ def collect_groups(events: list[Event], infos: list[dict]) -> dict[str, dict]:
     return groups
 
 
-def fill_fixture(events: list[Event], infos: list[dict], prefix: str, team_a: str | None, team_b: str | None, stage: str, leg: str, title_word: str, stamp: str, changes: list[str]) -> None:
+POSTPONED_STATUS = {"postponed", "delayed", "suspended", "cancelled", "canceled", "abandoned"}
+CHECK_AFTER = timedelta(hours=3, minutes=30)
+CRON_TAG = "SUCHAO_RESULT_UPDATE"
+CRON_CMD = f"/usr/bin/timeout 180 /usr/bin/python3 {ROOT}/scripts/update_results.py >> /var/log/suchao-cron.log 2>&1"
+
+
+def check_at(kickoff: datetime) -> datetime:
+    return kickoff + CHECK_AFTER
+
+
+def cron_line(when: datetime) -> str:
+    return f"{when.minute} {when.hour} {when.day} {when.month} * {CRON_CMD} # {CRON_TAG}"
+
+
+def field_has(field: str, value: int) -> bool:
+    if field == "*":
+        return True
+    for piece in field.split(","):
+        if "-" in piece:
+            left, right = piece.split("-", 1)
+            if left.isdigit() and right.isdigit() and int(left) <= value <= int(right):
+                return True
+        elif piece.isdigit() and int(piece) == value:
+            return True
+    return False
+
+
+def already_scheduled(current: str, when: datetime) -> bool:
+    for line in current.splitlines():
+        if CRON_TAG not in line or line.lstrip().startswith("#"):
+            continue
+        parts = line.split()
+        if len(parts) < 4:
+            continue
+        if all(field_has(parts[i], [when.minute, when.hour, when.day, when.month][i]) for i in range(4)):
+            return True
+    return False
+
+
+def should_rewrite(info: dict, event_start: datetime | None) -> bool:
+    if not info.get("start"):
+        return False
+    status = info["status"].lower()
+    moved = bool(event_start) and abs((info["start"] - event_start).total_seconds()) >= 60
+    if status in POSTPONED_STATUS:
+        return moved
+    return status in {"fixture", ""} and moved
+
+
+def ensure_check(kickoff: datetime, dry_run: bool) -> None:
+    when = check_at(kickoff)
+    line = cron_line(when)
+    if dry_run:
+        log.info("演练：将登记赛后查询 %s", when.strftime("%Y-%m-%d %H:%M"))
+        return
+    proc = subprocess.run(["crontab", "-l"], text=True, capture_output=True, check=False)
+    current = proc.stdout if proc.returncode == 0 else ""
+    if already_scheduled(current, when):
+        return
+    install = subprocess.run(["crontab", "-"], input=current.rstrip() + "\n" + line + "\n", text=True, capture_output=True, check=False)
+    if install.returncode != 0:
+        log.error("登记赛后查询失败：%s", install.stderr.strip())
+        return
+    log.info("已登记赛后查询 %s", when.strftime("%Y-%m-%d %H:%M"))
+
+
+def find_for_event(infos: list[dict], event: Event) -> dict | None:
+    home, away = event.teams()
+    if not home or not away:
+        return None
+    teams = {home, away}
+    prefix = event.prefix()
+    if prefix.startswith("1/4"):
+        stage = "qf"
+    elif prefix.startswith("半决赛"):
+        stage = "sf"
+    elif prefix.startswith("总决赛"):
+        stage = "final"
+    else:
+        stage = None
+    leg = None if stage == "final" else ("2" if event.is_deciding() else "1")
+    title = "决赛" if stage == "final" else ("次回合" if leg == "2" else "首回合")
+    exact = find_api(infos, teams, event_day(event), leg=leg, stage=stage, title_word=title)
+    if exact:
+        return exact
+    return find_api(infos, teams, leg=leg, stage=stage, title_word=title)
+
+
+def apply_postponement(event: Event, info: dict, stamp: str) -> str:
+    old = event.start()
+    apply_time(event, info)
+    updates = {"更新时间": stamp}
+    if info["start"]:
+        updates["时间"] = f"北京时间 {info['start'].strftime('%H:%M')}"
+        if old:
+            updates["延期"] = f"原定{old.strftime('%m月%d日 %H:%M')}，改至{info['start'].strftime('%m月%d日 %H:%M')}"
+    rewrite_description(event, updates)
+    return f"延期 {event.prefix()} {info['start'].strftime('%m-%d %H:%M')}"
+
+
+def fill_fixture(events: list[Event], infos: list[dict], prefix: str, team_a: str | None, team_b: str | None, stage: str, leg: str, title_word: str, stamp: str, changes: list[str], dry_run: bool) -> None:
     if not team_a or not team_b:
         return
     event = next((item for item in events if item.prefix() == prefix), None)
@@ -756,11 +849,16 @@ def fill_fixture(events: list[Event], infos: list[dict], prefix: str, team_a: st
     info = find_api(infos, {team_a, team_b}, leg=leg or None, stage=stage, title_word=title_word)
     current = event.teams()
     if info and current == (info["home"], info["away"]):
+        if should_rewrite(info, event.start()):
+            changes.append(apply_postponement(event, info, stamp))
+            ensure_check(info["start"], dry_run)
         return
     if not info and "主客待定" in event.summary() and set(event.mentioned()) == {team_a, team_b}:
         return
     ordered = sorted([team_a, team_b], key=lambda name: SEED.index(name) if name in SEED else 99)
     changes.append(apply_pairing(event, info["home"] if info else None, info["away"] if info else None, ordered, info, stamp))
+    if info and info.get("start"):
+        ensure_check(info["start"], dry_run)
 
 
 def run(dry_run: bool, fixture: Path | None) -> int:
@@ -785,25 +883,29 @@ def run(dry_run: bool, fixture: Path | None) -> int:
     stamp = now.strftime("%Y/%m/%d")
     groups = collect_groups(ko, infos)
 
+    if now.year != 2026 and not fixture:
+        log.info("已离开2026赛季窗口，不处理")
+        return 0
+    today = now.date()
     for event in ko:
+        start = event.start()
+        if not start or start.date() != today:
+            continue
         home, away = event.teams()
         if not home or not away:
+            log.info("%s 对阵未定，跳过", event.summary())
             continue
-        info = find_api(infos, {home, away}, event_day(event))
+        info = find_for_event(infos, event)
         if info is None:
-            info = find_api(infos, {home, away}, stage="qf" if event.prefix().startswith("1/4") else None)
-        if info is None:
-            log.info("未匹配到数据源：%s", event.summary())
-            continue
-        status = info["status"].lower()
-        if info["start"] and event.start() and abs((info["start"] - event.start()).total_seconds()) >= 60 and status in {"fixture", "postponed", "delayed"}:
-            apply_time(event, info)
-            rewrite_description(event, {"时间": f"北京时间 {info['start'].strftime('%H:%M')}", "更新时间": stamp})
-            changes.append(f"改期 {event.prefix()} {info['start'].strftime('%m-%d %H:%M')}")
+            log.info("%s 无完赛结果，数据源也没有这场比赛，无法确认延期", event.summary())
             continue
         ready, why = result_ready(info, event.is_deciding(), now)
         if not ready:
-            log.info("%s 不写入：%s", event.summary(), why)
+            if should_rewrite(info, event.start()):
+                changes.append(apply_postponement(event, info, stamp))
+                ensure_check(info["start"], dry_run or bool(fixture))
+                continue
+            log.info("%s 未出结果且未延期：%s", event.summary(), why)
             continue
         tail = format_result(info)["tail"]
         old = event.existing_score()
@@ -829,10 +931,10 @@ def run(dry_run: bool, fixture: Path | None) -> int:
             winners[slot] = winner
             log.info("%s组出线：%s（%s）", slot, winner, note)
 
-    fill_fixture(ko, infos, "半决赛1首回合", winners.get("A"), winners.get("B"), "sf", "1", "首回合", stamp, changes)
-    fill_fixture(ko, infos, "半决赛1次回合", winners.get("A"), winners.get("B"), "sf", "2", "次回合", stamp, changes)
-    fill_fixture(ko, infos, "半决赛2首回合", winners.get("C"), winners.get("D"), "sf", "1", "首回合", stamp, changes)
-    fill_fixture(ko, infos, "半决赛2次回合", winners.get("C"), winners.get("D"), "sf", "2", "次回合", stamp, changes)
+    fill_fixture(ko, infos, "半决赛1首回合", winners.get("A"), winners.get("B"), "sf", "1", "首回合", stamp, changes, dry_run or bool(fixture))
+    fill_fixture(ko, infos, "半决赛1次回合", winners.get("A"), winners.get("B"), "sf", "2", "次回合", stamp, changes, dry_run or bool(fixture))
+    fill_fixture(ko, infos, "半决赛2首回合", winners.get("C"), winners.get("D"), "sf", "1", "首回合", stamp, changes, dry_run or bool(fixture))
+    fill_fixture(ko, infos, "半决赛2次回合", winners.get("C"), winners.get("D"), "sf", "2", "次回合", stamp, changes, dry_run or bool(fixture))
 
     sf_winners: dict[str, str] = {}
     for num in ("1", "2"):
@@ -849,7 +951,7 @@ def run(dry_run: bool, fixture: Path | None) -> int:
         if winner:
             sf_winners[num] = winner
             log.info("半决赛%s出线：%s（%s）", num, winner, note)
-    fill_fixture(ko, infos, "总决赛", sf_winners.get("1"), sf_winners.get("2"), "final", "", "决赛", stamp, changes)
+    fill_fixture(ko, infos, "总决赛", sf_winners.get("1"), sf_winners.get("2"), "final", "", "决赛", stamp, changes, dry_run or bool(fixture))
 
     new_ics = dump_calendar(parts)
     readme = README_PATH.read_text(encoding="utf-8") if README_PATH.exists() else ""
@@ -897,9 +999,15 @@ def self_test() -> int:
     partial = interpret({**base, "minute_period": "AP", "ps_A": "4", "ps_B": ""})
     assert not result_ready(partial, True, now)[0]
     level = interpret({**base, "team_A_name": "南通队", "team_B_name": "泰州队", "fs_A": "1", "fs_B": "1", "start_play": "2026-10-11 11:40:00", "end_play": "2026-10-11 13:45:00"})
-    assert not result_ready(level, True, datetime(2026, 10, 11, 22, 0, tzinfo=BJ))[0]
-    assert result_ready(level, True, datetime(2026, 10, 12, 8, 10, tzinfo=BJ))[0]
-    assert result_ready(level, False, datetime(2026, 10, 11, 22, 0, tzinfo=BJ))[0]
+    assert result_ready(level, True, datetime(2026, 10, 11, 23, 10, tzinfo=BJ))[0]
+    assert result_ready(level, False, datetime(2026, 10, 11, 23, 10, tzinfo=BJ))[0]
+    postponed_match = interpret({**base, "status": "Postponed", "minute_period": "", "fs_A": "", "fs_B": "", "start_play": "2026-10-05 11:40:00", "end_play": ""})
+    assert not result_ready(postponed_match, False, now)[0]
+    assert should_rewrite(postponed_match, datetime(2026, 10, 3, 19, 40, tzinfo=BJ))
+    assert not should_rewrite(normal, datetime(2026, 10, 3, 19, 40, tzinfo=BJ))
+    moved = interpret({**base, "status": "Fixture", "minute_period": "", "fs_A": "", "fs_B": "", "start_play": "2026-10-06 12:00:00", "end_play": ""})
+    assert should_rewrite(moved, datetime(2026, 10, 4, 19, 40, tzinfo=BJ))
+    assert cron_line(check_at(datetime(2026, 10, 5, 19, 40, tzinfo=BJ))).startswith("10 23 5 10 ")
     leg1 = interpret({**base, "fs_A": "1", "fs_B": "1"})
     leg2 = interpret({**base, "team_A_name": "无锡队", "team_B_name": "徐州队", "minute_period": "AP", "fs_A": "0", "fs_B": "0", "ets_A": "", "ets_B": "", "ps_A": "5", "ps_B": "4", "start_play": "2026-10-11 11:40:00", "end_play": "2026-10-11 14:40:00"})
     winner, note = winner_of("徐州", "无锡", leg1, leg2, now)

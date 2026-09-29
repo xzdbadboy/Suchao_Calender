@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 """苏超淘汰赛完赛后更新比分。
 
-只在比赛当天结束后查询一次。完赛就写入最终比分；没有结果时再查是否延期，
-延期则改写开球时间，并只为新开球时间登记一次赛后查询。
+由会话定时任务在比赛当天 22:30 触发，不使用系统 cron。
+完赛就写入最终比分；没有结果时再查是否延期，延期则改写开球时间，
+并输出 NEED_SCHEDULE，由定时插件登记下一次一次性查询。
 出线后同步半决赛/决赛对阵，并更新 README。确认有变化后自动提交并推送。
 """
 
@@ -742,45 +743,22 @@ def collect_groups(events: list[Event], infos: list[dict]) -> dict[str, dict]:
 
 POSTPONED_STATUS = {"postponed", "delayed", "suspended", "cancelled", "canceled", "abandoned"}
 CHECK_AFTER = timedelta(hours=2, minutes=50)
-CRON_TAG = "SUCHAO_RESULT_UPDATE"
-CRON_YEAR = "2026"
-CRON_CMD = (
-    "/bin/sh -c '[ \"$(TZ=Asia/Shanghai date +\\%Y)\" = \"" + CRON_YEAR + "\" ] && "
-    f"/usr/bin/timeout 180 /usr/bin/python3 {ROOT}/scripts/update_results.py'"
-)
 
 
 def check_at(kickoff: datetime) -> datetime:
     return kickoff + CHECK_AFTER
 
 
-def cron_line(when: datetime) -> str:
-    return f"{when.minute} {when.hour} {when.day} {when.month} * {CRON_CMD} >> /var/log/suchao-cron.log 2>&1 # {CRON_TAG}"
+def schedule_stamp(when: datetime) -> str:
+    return when.strftime("%Y-%m-%dT%H:%M:%S+08:00")
 
 
-def field_has(field: str, value: int) -> bool:
-    if field == "*":
-        return True
-    for piece in field.split(","):
-        if "-" in piece:
-            left, right = piece.split("-", 1)
-            if left.isdigit() and right.isdigit() and int(left) <= value <= int(right):
-                return True
-        elif piece.isdigit() and int(piece) == value:
-            return True
-    return False
-
-
-def already_scheduled(current: str, when: datetime) -> bool:
-    for line in current.splitlines():
-        if CRON_TAG not in line or line.lstrip().startswith("#"):
-            continue
-        parts = line.split()
-        if len(parts) < 4:
-            continue
-        if all(field_has(parts[i], [when.minute, when.hour, when.day, when.month][i]) for i in range(4)):
-            return True
-    return False
+def note_schedule(kickoff: datetime) -> None:
+    when = check_at(kickoff)
+    if when.year != 2026:
+        log.info("新开球时间不在2026年，不登记查询：%s", schedule_stamp(when))
+        return
+    log.info("NEED_SCHEDULE %s", schedule_stamp(when))
 
 
 def should_rewrite(info: dict, event_start: datetime | None) -> bool:
@@ -791,40 +769,6 @@ def should_rewrite(info: dict, event_start: datetime | None) -> bool:
     if status in POSTPONED_STATUS:
         return moved
     return status in {"fixture", ""} and moved
-
-
-def remove_suchao_cron(dry_run: bool) -> None:
-    proc = subprocess.run(["crontab", "-l"], text=True, capture_output=True, check=False)
-    if proc.returncode != 0:
-        return
-    kept = [line for line in proc.stdout.splitlines() if CRON_TAG not in line]
-    if len(kept) == len(proc.stdout.splitlines()):
-        return
-    if dry_run:
-        log.info("演练：将移除过期的苏超定时任务")
-        return
-    install = subprocess.run(["crontab", "-"], input="\n".join(kept).rstrip() + "\n", text=True, capture_output=True, check=False)
-    if install.returncode != 0:
-        log.error("移除过期定时任务失败：%s", install.stderr.strip())
-        return
-    log.info("已移除过期的苏超定时任务")
-
-
-def ensure_check(kickoff: datetime, dry_run: bool) -> None:
-    when = check_at(kickoff)
-    line = cron_line(when)
-    if dry_run:
-        log.info("演练：将登记赛后查询 %s", when.strftime("%Y-%m-%d %H:%M"))
-        return
-    proc = subprocess.run(["crontab", "-l"], text=True, capture_output=True, check=False)
-    current = proc.stdout if proc.returncode == 0 else ""
-    if already_scheduled(current, when):
-        return
-    install = subprocess.run(["crontab", "-"], input=current.rstrip() + "\n" + line + "\n", text=True, capture_output=True, check=False)
-    if install.returncode != 0:
-        log.error("登记赛后查询失败：%s", install.stderr.strip())
-        return
-    log.info("已登记赛后查询 %s", when.strftime("%Y-%m-%d %H:%M"))
 
 
 def find_for_event(infos: list[dict], event: Event) -> dict | None:
@@ -872,14 +816,14 @@ def fill_fixture(events: list[Event], infos: list[dict], prefix: str, team_a: st
     if info and current == (info["home"], info["away"]):
         if should_rewrite(info, event.start()):
             changes.append(apply_postponement(event, info, stamp))
-            ensure_check(info["start"], dry_run)
+            note_schedule(info["start"])
         return
     if not info and "主客待定" in event.summary() and set(event.mentioned()) == {team_a, team_b}:
         return
     ordered = sorted([team_a, team_b], key=lambda name: SEED.index(name) if name in SEED else 99)
     changes.append(apply_pairing(event, info["home"] if info else None, info["away"] if info else None, ordered, info, stamp))
     if info and info.get("start"):
-        ensure_check(info["start"], dry_run)
+        note_schedule(info["start"])
 
 
 def run(dry_run: bool, fixture: Path | None) -> int:
@@ -905,8 +849,7 @@ def run(dry_run: bool, fixture: Path | None) -> int:
     groups = collect_groups(ko, infos)
 
     if now.year != 2026 and not fixture:
-        log.info("已离开2026赛季窗口，不查询，并移除过期定时任务")
-        remove_suchao_cron(dry_run)
+        log.info("已离开2026赛季窗口，不查询")
         return 0
     today = now.date()
     for event in ko:
@@ -925,7 +868,7 @@ def run(dry_run: bool, fixture: Path | None) -> int:
         if not ready:
             if should_rewrite(info, event.start()):
                 changes.append(apply_postponement(event, info, stamp))
-                ensure_check(info["start"], dry_run or bool(fixture))
+                note_schedule(info["start"])
                 continue
             log.info("%s 未出结果且未延期：%s", event.summary(), why)
             continue
@@ -1029,9 +972,8 @@ def self_test() -> int:
     assert not should_rewrite(normal, datetime(2026, 10, 3, 19, 40, tzinfo=BJ))
     moved = interpret({**base, "status": "Fixture", "minute_period": "", "fs_A": "", "fs_B": "", "start_play": "2026-10-06 12:00:00", "end_play": ""})
     assert should_rewrite(moved, datetime(2026, 10, 4, 19, 40, tzinfo=BJ))
-    sample = cron_line(check_at(datetime(2026, 10, 5, 19, 40, tzinfo=BJ)))
-    assert sample.startswith("30 22 5 10 "), sample
-    assert "2026" in sample and "date +\\%Y" in sample, sample
+    sample = schedule_stamp(check_at(datetime(2026, 10, 5, 19, 40, tzinfo=BJ)))
+    assert sample == "2026-10-05T22:30:00+08:00", sample
     leg1 = interpret({**base, "fs_A": "1", "fs_B": "1"})
     leg2 = interpret({**base, "team_A_name": "无锡队", "team_B_name": "徐州队", "minute_period": "AP", "fs_A": "0", "fs_B": "0", "ets_A": "", "ets_B": "", "ps_A": "5", "ps_B": "4", "start_play": "2026-10-11 11:40:00", "end_play": "2026-10-11 14:40:00"})
     winner, note = winner_of("徐州", "无锡", leg1, leg2, now)

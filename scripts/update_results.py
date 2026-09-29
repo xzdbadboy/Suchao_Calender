@@ -741,9 +741,13 @@ def collect_groups(events: list[Event], infos: list[dict]) -> dict[str, dict]:
 
 
 POSTPONED_STATUS = {"postponed", "delayed", "suspended", "cancelled", "canceled", "abandoned"}
-CHECK_AFTER = timedelta(hours=3, minutes=30)
+CHECK_AFTER = timedelta(hours=2, minutes=50)
 CRON_TAG = "SUCHAO_RESULT_UPDATE"
-CRON_CMD = f"/usr/bin/timeout 180 /usr/bin/python3 {ROOT}/scripts/update_results.py >> /var/log/suchao-cron.log 2>&1"
+CRON_YEAR = "2026"
+CRON_CMD = (
+    "/bin/sh -c '[ \"$(TZ=Asia/Shanghai date +\\%Y)\" = \"" + CRON_YEAR + "\" ] && "
+    f"/usr/bin/timeout 180 /usr/bin/python3 {ROOT}/scripts/update_results.py'"
+)
 
 
 def check_at(kickoff: datetime) -> datetime:
@@ -751,7 +755,7 @@ def check_at(kickoff: datetime) -> datetime:
 
 
 def cron_line(when: datetime) -> str:
-    return f"{when.minute} {when.hour} {when.day} {when.month} * {CRON_CMD} # {CRON_TAG}"
+    return f"{when.minute} {when.hour} {when.day} {when.month} * {CRON_CMD} >> /var/log/suchao-cron.log 2>&1 # {CRON_TAG}"
 
 
 def field_has(field: str, value: int) -> bool:
@@ -787,6 +791,23 @@ def should_rewrite(info: dict, event_start: datetime | None) -> bool:
     if status in POSTPONED_STATUS:
         return moved
     return status in {"fixture", ""} and moved
+
+
+def remove_suchao_cron(dry_run: bool) -> None:
+    proc = subprocess.run(["crontab", "-l"], text=True, capture_output=True, check=False)
+    if proc.returncode != 0:
+        return
+    kept = [line for line in proc.stdout.splitlines() if CRON_TAG not in line]
+    if len(kept) == len(proc.stdout.splitlines()):
+        return
+    if dry_run:
+        log.info("演练：将移除过期的苏超定时任务")
+        return
+    install = subprocess.run(["crontab", "-"], input="\n".join(kept).rstrip() + "\n", text=True, capture_output=True, check=False)
+    if install.returncode != 0:
+        log.error("移除过期定时任务失败：%s", install.stderr.strip())
+        return
+    log.info("已移除过期的苏超定时任务")
 
 
 def ensure_check(kickoff: datetime, dry_run: bool) -> None:
@@ -884,7 +905,8 @@ def run(dry_run: bool, fixture: Path | None) -> int:
     groups = collect_groups(ko, infos)
 
     if now.year != 2026 and not fixture:
-        log.info("已离开2026赛季窗口，不处理")
+        log.info("已离开2026赛季窗口，不查询，并移除过期定时任务")
+        remove_suchao_cron(dry_run)
         return 0
     today = now.date()
     for event in ko:
@@ -1007,7 +1029,9 @@ def self_test() -> int:
     assert not should_rewrite(normal, datetime(2026, 10, 3, 19, 40, tzinfo=BJ))
     moved = interpret({**base, "status": "Fixture", "minute_period": "", "fs_A": "", "fs_B": "", "start_play": "2026-10-06 12:00:00", "end_play": ""})
     assert should_rewrite(moved, datetime(2026, 10, 4, 19, 40, tzinfo=BJ))
-    assert cron_line(check_at(datetime(2026, 10, 5, 19, 40, tzinfo=BJ))).startswith("10 23 5 10 ")
+    sample = cron_line(check_at(datetime(2026, 10, 5, 19, 40, tzinfo=BJ)))
+    assert sample.startswith("30 22 5 10 "), sample
+    assert "2026" in sample and "date +\\%Y" in sample, sample
     leg1 = interpret({**base, "fs_A": "1", "fs_B": "1"})
     leg2 = interpret({**base, "team_A_name": "无锡队", "team_B_name": "徐州队", "minute_period": "AP", "fs_A": "0", "fs_B": "0", "ets_A": "", "ets_B": "", "ps_A": "5", "ps_B": "4", "start_play": "2026-10-11 11:40:00", "end_play": "2026-10-11 14:40:00"})
     winner, note = winner_of("徐州", "无锡", leg1, leg2, now)

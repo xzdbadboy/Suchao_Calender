@@ -639,20 +639,20 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 常规赛\n轮次: 第22轮\n比分: 泰州队 2:0 盐城队\n时间: 北京时间 19:40\n更新时间: 2026/09/19
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:1/4决赛首回合-徐州 vs 无锡
+SUMMARY:1/4决赛首回合-徐州 0:3 无锡
 DTSTART;TZID=Asia/Shanghai:20261003T194000
 DTEND;TZID=Asia/Shanghai:20261003T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/xuzhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
-DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 首回合\n对阵: 徐州队(主) vs 无锡队\n签位: A · 徐州奥体中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 首回合\n对阵: 徐州队(主) vs 无锡队\n比分: 徐州队 0:3 无锡队\n签位: A · 徐州奥体中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/10/03
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:1/4决赛首回合-泰州 vs 南通
+SUMMARY:1/4决赛首回合-泰州 3:4 南通
 DTSTART;TZID=Asia/Shanghai:20261003T194000
 DTEND;TZID=Asia/Shanghai:20261003T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/nantong.png
-DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 首回合\n对阵: 泰州队(主) vs 南通队\n签位: B · 泰州体育公园体育场\n时间: 北京时间 19:40\n更新时间: 2026/09/28
+DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 首回合\n对阵: 泰州队(主) vs 南通队\n比分: 泰州队 3:4 南通队\n签位: B · 泰州体育公园体育场\n时间: 北京时间 19:40\n更新时间: 2026/10/03
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:1/4决赛首回合-盐城 vs 宿迁

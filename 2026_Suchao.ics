@@ -703,20 +703,20 @@ ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Cale
 DESCRIPTION:阶段: 淘汰赛\n轮次: 1/4决赛 次回合\n对阵: 常州队(主) vs 苏州队\n比分: 常州队 3:0 苏州队\n签位: D · 常州奥体中心体育场\n时间: 北京时间 19:40\n更新时间: 2026/10/11
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:半决赛1首回合-泰州 vs 无锡
+SUMMARY:半决赛1首回合-泰州 0:1 无锡
 DTSTART;TZID=Asia/Shanghai:20261017T194000
 DTEND;TZID=Asia/Shanghai:20261017T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/taizhou.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/wuxi.png
-DESCRIPTION:阶段: 淘汰赛\n轮次: 半决赛1 首回合\n对阵: 泰州队(主) vs 无锡队\n时间: 北京时间 19:40\n更新时间: 2026/10/11
+DESCRIPTION:阶段: 淘汰赛\n轮次: 半决赛1 首回合\n对阵: 泰州队(主) vs 无锡队\n比分: 泰州队 0:1 无锡队\n时间: 北京时间 19:40\n更新时间: 2026/10/17
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:半决赛2首回合-盐城 vs 常州
+SUMMARY:半决赛2首回合-盐城 0:0 常州
 DTSTART;TZID=Asia/Shanghai:20261017T194000
 DTEND;TZID=Asia/Shanghai:20261017T214000
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/yancheng.png
 ATTACH;FMTTYPE=image/png:https://raw.githubusercontent.com/xzdbadboy/Suchao_Calender/main/icon/changzhou.png
-DESCRIPTION:阶段: 淘汰赛\n轮次: 半决赛2 首回合\n对阵: 盐城队(主) vs 常州队\n时间: 北京时间 19:40\n更新时间: 2026/10/11
+DESCRIPTION:阶段: 淘汰赛\n轮次: 半决赛2 首回合\n对阵: 盐城队(主) vs 常州队\n比分: 盐城队 0:0 常州队\n时间: 北京时间 19:40\n更新时间: 2026/10/17
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:半决赛1次回合-无锡 vs 泰州
